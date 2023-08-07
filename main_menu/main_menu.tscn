@@ -49,11 +49,18 @@ grow_horizontal = 2
 text = "A game by YOU"
 
 [node name="Controls" type="Label" parent="."]
-layout_mode = 0
-offset_left = 843.0
-offset_top = 573.0
-offset_right = 1251.0
-offset_bottom = 677.0
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -433.0
+offset_top = -149.0
+offset_right = -25.0
+offset_bottom = -45.0
+grow_horizontal = 0
+grow_vertical = 0
 text = "CONTROLS
 Move: WASD | Accept: J | Cancel: K | Pause: P
 Move: Arrow Keys | Accept: Z | Cancel: Z | Pause: Esc
@@ -61,31 +68,38 @@ Gamepads work too!"
 horizontal_alignment = 2
 
 [node name="Instructions" type="Label" parent="."]
-layout_mode = 0
-offset_left = 54.0
-offset_top = 570.0
-offset_right = 365.0
-offset_bottom = 674.0
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = -149.0
+offset_right = 336.0
+offset_bottom = -45.0
+grow_vertical = 0
 text = "INSTRUCTIONS
 Collect all the things!"
 
 [node name="Version" type="Label" parent="."]
-layout_mode = 0
-offset_left = 1060.0
-offset_top = 20.0
-offset_right = 1258.0
-offset_bottom = 46.0
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -243.0
+offset_top = 25.0
+offset_right = -45.0
+offset_bottom = 51.0
+grow_horizontal = 0
 text = "Version: [set dynamically]"
 horizontal_alignment = 2
 script = ExtResource("1_5huni")
 
 [node name="DebugUIStatus" type="Label" parent="." groups=["debug_ui"]]
-visible = false
-layout_mode = 0
-offset_left = 24.0
-offset_top = 23.0
-offset_right = 162.0
-offset_bottom = 49.0
+layout_mode = 1
+offset_left = 25.0
+offset_top = 44.0
+offset_right = 163.0
+offset_bottom = 70.0
 text = "Debug UI enabled"
 
 [node name="MenuOptions" type="VFlowContainer" parent="." node_paths=PackedStringArray("shortcut_context")]
